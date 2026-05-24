@@ -1071,5 +1071,21 @@ function draw() {
 }
 draw();
 </script>
+  <!-- ── Protección básica de código fuente ── -->
+<script>
+  // Deshabilita clic derecho
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Bloquea F12, Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+  document.addEventListener('keydown', e => {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.key === 'u') ||
+      (e.ctrlKey && e.shiftKey && ['i','I','j','J','c','C'].includes(e.key))
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
