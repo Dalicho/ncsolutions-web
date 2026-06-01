@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot para Página Web Ecuador | NC Solutions</title>
+  <meta name="description" content="Asistente virtual 24/7 para tu sitio web en Ecuador. Captura leads, responde preguntas y atiende clientes automáticamente. NC Solutions.">
+  <link rel="canonical" href="https://ncsolutionsec.com/chatbot-web.html">
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"         content="website">
+  <meta property="og:url"          content="https://ncsolutionsec.com/chatbot-web.html">
+  <meta property="og:title"        content="Chatbot para Página Web Ecuador | NC Solutions">
+  <meta property="og:description"  content="Asistente virtual 24/7 para tu sitio web en Ecuador. Captura leads, responde preguntas y atiende clientes automáticamente.">
+  <meta property="og:image"        content="https://ncsolutionsec.com/og-image.png">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"       content="es_EC">
+  <meta property="og:site_name"    content="NC Solutions">
+  <!-- ── TWITTER CARD ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@ncsolutionsec">
+  <meta name="twitter:title"       content="Chatbot para Página Web Ecuador | NC Solutions">
+  <meta name="twitter:description" content="Asistente virtual 24/7 para tu sitio web en Ecuador. Captura leads, responde preguntas y atiende clientes automáticamente.">
+  <meta name="twitter:image"       content="https://ncsolutionsec.com/og-image.png">
+  <!-- ── SCHEMA.ORG — BreadcrumbList ── -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ncsolutionsec.com/"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://ncsolutionsec.com/#servicios"},{"@type":"ListItem","position":3,"name":"Chatbot para Página Web Ecuador","item":"https://ncsolutionsec.com/chatbot-web.html"}]}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --nocturno: #1E0A3C; --nocturno-2: #2D1254;
+      --violeta: #7C3AED; --violeta-light: #A78BFA;
+      --naranja: #F97316; --naranja-dark: #EA6A0A;
+      --lavanda: #FAF5FF; --gray-100: #F3F4F6; --gray-500: #6B7280;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--nocturno); background: #fff; overflow-x: hidden; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between; padding: 1rem 2.5rem;
+      background: rgba(30,10,60,0.93); backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(124,58,237,0.2);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .nav-logo svg { width: 32px; height: 32px; }
+    .nav-logo-text { font-size: 16px; font-weight: 700; color: #FAF5FF; }
+    .nav-logo-text span { color: var(--violeta); }
+    .nav-back { display: flex; align-items: center; gap: 0.4rem; color: rgba(250,245,255,0.65); text-decoration: none; font-size: 13.5px; font-weight: 500; transition: color 0.2s; }
+    .nav-back:hover { color: #FAF5FF; }
+    .btn-primary { background: var(--naranja); color: #fff; border: none; border-radius: 8px; padding: 0.6rem 1.2rem; font-size: 14px; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: background 0.2s, transform 0.15s; }
+    .btn-primary:hover { background: var(--naranja-dark); transform: translateY(-1px); }
+    .service-hero { background: var(--nocturno); min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 9rem 2rem 5rem; text-align: center; position: relative; overflow: hidden; }
+    .service-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 40%, rgba(124,58,237,0.22) 0%, transparent 65%); }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+    .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-size: 12.5px; color: rgba(250,245,255,0.45); margin-bottom: 1.5rem; }
+    .breadcrumb a { color: rgba(250,245,255,0.45); text-decoration: none; }
+    .hero-icon { width: 72px; height: 72px; border-radius: 18px; background: rgba(124,58,237,0.18); border: 1px solid rgba(124,58,237,0.35); display: flex; align-items: center; justify-content: center; font-size: 32px; color: var(--naranja); margin: 0 auto 1.5rem; }
+    .hero-tag { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; color: var(--naranja); margin-bottom: 0.75rem; }
+    .hero-title { font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 800; color: #FAF5FF; line-height: 1.1; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+    .hero-title span { color: var(--naranja); }
+    .hero-sub { font-size: 1.05rem; color: rgba(250,245,255,0.6); line-height: 1.75; max-width: 560px; margin: 0 auto 2.5rem; }
+    .hero-ctas { display: flex; gap: 0.875rem; justify-content: center; flex-wrap: wrap; }
+    .btn-outline { background: transparent; color: #FAF5FF; border: 1.5px solid rgba(250,245,255,0.25); border-radius: 8px; padding: 0.65rem 1.3rem; font-size: 14px; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: border-color 0.2s, background 0.2s; }
+    section { padding: 5rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-tag { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; color: var(--violeta); margin-bottom: 0.6rem; }
+    .section-title { font-size: clamp(1.7rem, 2.8vw, 2.4rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 0.875rem; }
+    .section-sub { font-size: 1rem; color: var(--gray-500); line-height: 1.75; max-width: 560px; }
+    .section-header { margin-bottom: 3rem; }
+    .features-section { background: var(--lavanda); }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .feature-card { background: #fff; border-radius: 14px; padding: 1.5rem; border: 1.5px solid rgba(124,58,237,0.1); transition: border-color 0.2s, box-shadow 0.2s; }
+    .feature-card:hover { border-color: rgba(124,58,237,0.3); box-shadow: 0 6px 24px rgba(124,58,237,0.08); }
+    .feature-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(124,58,237,0.08); display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--violeta); margin-bottom: 1rem; }
+    .feature-title { font-size: 15px; font-weight: 700; margin-bottom: 0.4rem; }
+    .feature-desc { font-size: 13.5px; color: var(--gray-500); line-height: 1.65; }
+    .use-cases { background: #fff; }
+    .cases-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+    .case-card { background: var(--lavanda); border-radius: 12px; padding: 1.4rem; border-left: 4px solid var(--naranja); }
+    .case-industry { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--naranja); margin-bottom: 0.5rem; }
+    .case-text { font-size: 14px; color: var(--nocturno); line-height: 1.6; }
+    .process-section { background: var(--nocturno); }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .process-step { background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.22); border-radius: 14px; padding: 1.75rem 1.5rem; position: relative; }
+    .step-num { font-size: 3rem; font-weight: 800; color: rgba(124,58,237,0.2); line-height: 1; margin-bottom: 0.75rem; }
+    .step-title { font-size: 16px; font-weight: 700; color: #FAF5FF; margin-bottom: 0.5rem; }
+    .step-desc { font-size: 13.5px; color: rgba(250,245,255,0.55); line-height: 1.7; }
+    .step-icon-badge { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 22px; color: var(--naranja); }
+    .cta-section { background: var(--nocturno); text-align: center; position: relative; overflow: hidden; }
+    .cta-section::before { content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); pointer-events: none; }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-title { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; color: #FAF5FF; margin-bottom: 1rem; }
+    .cta-sub { font-size: 1rem; color: rgba(250,245,255,0.6); line-height: 1.75; max-width: 460px; margin: 0 auto 2.5rem; }
+    .cta-btns { display: flex; gap: 0.875rem; justify-content: center; flex-wrap: wrap; }
+    .btn-whatsapp { background: #25D366; color: #fff; border: none; border-radius: 8px; padding: 0.75rem 1.6rem; font-size: 15px; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s, transform 0.15s; }
+    .btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-1px); }
+    footer { background: #0F0520; padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+    .footer-logo svg { width: 26px; height: 26px; }
+    .footer-logo-text { font-size: 14px; font-weight: 700; color: #FAF5FF; }
+    .footer-logo-text span { color: var(--violeta); }
+    .footer-copy { font-size: 12.5px; color: rgba(250,245,255,0.3); }
+    .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; color: #fff; text-decoration: none; box-shadow: 0 4px 18px rgba(37,211,102,0.4); z-index: 200; transition: transform 0.2s; }
+    .wa-float:hover { transform: scale(1.08); }
+    @keyframes sda-up { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes sda-left { from { opacity: 0; transform: translateX(-28px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes sda-right { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes sda-scale { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    .sda-up, .sda-left, .sda-right, .sda-scale { animation-timing-function: linear; animation-fill-mode: both; animation-timeline: view(); animation-range: entry 0% cover 38%; }
+    .sda-up { animation-name: sda-up; } .sda-left { animation-name: sda-left; } .sda-right { animation-name: sda-right; } .sda-scale { animation-name: sda-scale; }
+    .sda-d1 { animation-delay: 0.06s; } .sda-d2 { animation-delay: 0.13s; } .sda-d3 { animation-delay: 0.20s; }
+    @supports not (animation-timeline: view()) {
+      .sda-up, .sda-left, .sda-right, .sda-scale { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; animation: none; }
+      .sda-left { transform: translateX(-20px); } .sda-right { transform: translateX(20px); } .sda-scale { transform: scale(0.93); }
+      .sda-up.in-view, .sda-left.in-view, .sda-right.in-view, .sda-scale.in-view { opacity: 1; transform: none; }
+    }
+    @media (max-width: 640px) { nav { padding: 0.875rem 1.25rem; } section { padding: 3.75rem 1.25rem; } footer { flex-direction: column; text-align: center; } }
+
+    /* ── EJEMPLOS SLIDER ── */
+    .ejemplos-section { background: var(--lavanda); }
+    .ejemplos-slider { position: relative; overflow: hidden; border-radius: 20px; }
+    .ejemplos-track { display: flex; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); }
+    .ejemplo-slide { min-width: 100%; display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: center; padding: 0.25rem 3rem; }
+    .ejemplo-img-wrap { position: relative; border-radius: 14px; overflow: hidden; box-shadow: 0 24px 64px rgba(30,10,60,0.18); border: 1.5px solid rgba(124,58,237,0.15); min-height: 220px; background: linear-gradient(135deg,var(--nocturno),var(--nocturno-2)); display:flex; align-items:center; justify-content:center; }
+    .ejemplo-img { width: 100%; height: auto; display: block; transition: transform 0.4s ease; }
+    .ejemplo-overlay { position: absolute; inset: 0; background: rgba(30,10,60,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; }
+    .ejemplo-img-wrap:hover .ejemplo-overlay { opacity: 1; }
+    .ejemplo-img-wrap:hover .ejemplo-img { transform: scale(1.025); }
+    .ejemplo-tag { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--violeta); margin-bottom: 0.5rem; }
+    .ejemplo-title { font-size: 1.5rem; font-weight: 800; color: var(--nocturno); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+    .ejemplo-desc { font-size: 14px; color: var(--gray-500); line-height: 1.7; margin-bottom: 1.25rem; }
+    .ejemplo-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .etag { background: rgba(124,58,237,0.1); color: var(--violeta); padding: 0.25rem 0.75rem; border-radius: 100px; font-size: 12px; font-weight: 600; }
+    .ej-slider-btn { position: absolute; top: 45%; transform: translateY(-50%); width: 42px; height: 42px; background: #fff; border: 1.5px solid rgba(124,58,237,0.2); border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--nocturno); box-shadow: 0 4px 16px rgba(30,10,60,0.1); transition: background 0.2s,border-color 0.2s,transform 0.2s; z-index: 10; }
+    .ej-slider-btn:hover { background: var(--violeta); border-color: var(--violeta); color: #fff; transform: translateY(-50%) scale(1.07); }
+    .ej-prev { left: 0.5rem; } .ej-next { right: 0.5rem; }
+    .ej-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; }
+    .ej-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(124,58,237,0.25); border: none; cursor: pointer; padding: 0; transition: background 0.25s,transform 0.25s; }
+    .ej-dot.active { background: var(--violeta); transform: scale(1.35); }
+    @media (max-width: 768px) { .ejemplo-slide { grid-template-columns: 1fr; gap: 1.5rem; padding: 0.25rem 2rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="NC_Solutions_web.html" class="nav-logo">
+    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="13" fill="#2D1254"/><line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="22" y2="22" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="58" y1="32" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><circle cx="36" cy="15" r="5" fill="#F97316"/><circle cx="58" cy="32" r="4" fill="#7C3AED"/><circle cx="52" cy="58" r="4" fill="#F97316"/><circle cx="16" cy="50" r="5" fill="#7C3AED"/><circle cx="22" cy="22" r="3" fill="#F97316" opacity="0.75"/></svg>
+    <span class="nav-logo-text"><span>NC</span> Solutions</span>
+  </a>
+  <a href="NC_Solutions_web.html#servicios" class="nav-back"><i class="ti ti-arrow-left"></i> Todos los servicios</a>
+  <a href="NC_Solutions_web.html#contacto" class="btn-primary"><i class="ti ti-file-invoice"></i> Cotiza gratis</a>
+</nav>
+
+<section class="service-hero">
+  <div class="hero-content">
+    <div class="breadcrumb">
+      <a href="NC_Solutions_web.html">Inicio</a><i class="ti ti-chevron-right"></i>
+      <a href="NC_Solutions_web.html#servicios">Servicios</a><i class="ti ti-chevron-right"></i>
+      <span>Chatbot para página web</span>
+    </div>
+    <div class="hero-icon"><i class="ti ti-message-chatbot"></i></div>
+    <p class="hero-tag">Servicio</p>
+    <h1 class="hero-title">Chatbot para web que<br><span>atiende 24/7 en Ecuador</span></h1>
+    <p class="hero-sub">Un asistente virtual inteligente integrado en tu sitio que captura leads, responde preguntas frecuentes y guía a tus visitantes sin que tú estés pendiente.</p>
+    <div class="hero-ctas">
+      <a href="NC_Solutions_web.html#contacto" class="btn-primary" style="padding:.75rem 1.6rem;font-size:15px;"><i class="ti ti-brand-whatsapp"></i> Cotizar ahora</a>
+      <a href="#casos" class="btn-outline" style="padding:.75rem 1.6rem;font-size:15px;">Ver casos de uso <i class="ti ti-arrow-down"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="section-header sda-up">
+      <p class="section-tag">Funcionalidades</p>
+      <h2 class="section-title">Todo lo que hace tu chatbot</h2>
+      <p class="section-sub">No es solo un chat. Es tu mejor vendedor disponible todo el día, todos los días.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card sda-up"><div class="feature-icon"><i class="ti ti-clock-24"></i></div><p class="feature-title">Disponible 24/7</p><p class="feature-desc">Responde a tus clientes a las 2 AM igual que a las 2 PM. Ninguna consulta sin atender.</p></div>
+      <div class="feature-card sda-up sda-d1"><div class="feature-icon"><i class="ti ti-user-plus"></i></div><p class="feature-title">Captura de leads automática</p><p class="feature-desc">Solicita nombre, correo y teléfono antes de responder. Tu lista de contactos crece sola.</p></div>
+      <div class="feature-card sda-up sda-d2"><div class="feature-icon"><i class="ti ti-brand-whatsapp"></i></div><p class="feature-title">Derivación a WhatsApp</p><p class="feature-desc">Cuando la consulta requiere atención humana, el chat redirige al agente indicado por WhatsApp.</p></div>
+      <div class="feature-card sda-up sda-d3"><div class="feature-icon"><i class="ti ti-settings-automation"></i></div><p class="feature-title">Flujos personalizados</p><p class="feature-desc">Menús, botones de respuesta rápida y árboles de decisión adaptados a tu negocio.</p></div>
+      <div class="feature-card sda-up"><div class="feature-icon"><i class="ti ti-world"></i></div><p class="feature-title">Integración en cualquier web</p><p class="feature-desc">Se instala con un snippet de código en cualquier sitio: HTML, WordPress, Shopify, Webflow.</p></div>
+      <div class="feature-card sda-up sda-d1"><div class="feature-icon"><i class="ti ti-chart-bar"></i></div><p class="feature-title">Panel de conversaciones</p><p class="feature-desc">Revisa todos los chats, las preguntas más frecuentes y los leads capturados desde un panel central.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="use-cases" id="casos">
+  <div class="container">
+    <div class="section-header sda-up">
+      <p class="section-tag">Casos de uso</p>
+      <h2 class="section-title">¿En qué tipo de negocio funciona?</h2>
+      <p class="section-sub">Si tienes clientes que hacen preguntas, tienes un caso de uso para un chatbot.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card sda-up"><p class="case-industry">Restaurantes</p><p class="case-text">Responde horarios, toma reservas y muestra el menú sin que nadie tenga que contestar el chat.</p></div>
+      <div class="case-card sda-up sda-d1"><p class="case-industry">Clínicas y salud</p><p class="case-text">Agenda citas, informa precios y deriva urgencias al número de guardia automáticamente.</p></div>
+      <div class="case-card sda-up sda-d2"><p class="case-industry">E-commerce</p><p class="case-text">Resuelve dudas sobre productos, estados de pedido y política de devoluciones al instante.</p></div>
+      <div class="case-card sda-up sda-d3"><p class="case-industry">Inmobiliarias</p><p class="case-text">Filtra el perfil del comprador y agenda visitas antes de que el agente intervenga.</p></div>
+      <div class="case-card sda-up"><p class="case-industry">Servicios B2B</p><p class="case-text">Califica el lead, detecta si tiene presupuesto y agenda demo con el comercial adecuado.</p></div>
+      <div class="case-card sda-up sda-d1"><p class="case-industry">Educación</p><p class="case-text">Informa sobre cursos, precios, fechas y requisitos de matrícula sin intervención humana.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="container">
+    <div class="section-header sda-up">
+      <p class="section-tag" style="color:var(--naranja);">Implementación</p>
+      <h2 class="section-title" style="color:#FAF5FF;">Listo en 3 a 5 días</h2>
+      <p class="section-sub" style="color:rgba(250,245,255,0.55);">Proceso rápido y sin fricción para tu equipo.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step sda-up"><i class="ti ti-list-check step-icon-badge"></i><div class="step-num">01</div><p class="step-title">Mapeo de preguntas</p><p class="step-desc">Recopilamos las 20-30 preguntas más frecuentes de tus clientes y los flujos clave.</p></div>
+      <div class="process-step sda-up sda-d1"><i class="ti ti-paint step-icon-badge"></i><div class="step-num">02</div><p class="step-title">Diseño del flujo</p><p class="step-desc">Creamos el árbol de conversación con tu tono de marca y los botones de acción.</p></div>
+      <div class="process-step sda-up sda-d2"><i class="ti ti-code step-icon-badge"></i><div class="step-num">03</div><p class="step-title">Instalación</p><p class="step-desc">Integramos el chatbot en tu web con un snippet de código. Sin tocar tu diseño.</p></div>
+      <div class="process-step sda-up sda-d3"><i class="ti ti-rocket step-icon-badge"></i><div class="step-num">04</div><p class="step-title">Pruebas y lanzamiento</p><p class="step-desc">Probamos todos los flujos contigo y ajustamos antes de activarlo para tus visitantes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EJEMPLOS -->
+<section class="ejemplos-section" id="ejemplos">
+  <div class="container">
+    <div class="section-header sda-up">
+      <p class="section-tag" style="color:var(--naranja);">Ejemplos reales</p>
+      <h2 class="section-title">Así queda un chatbot en tu web</h2>
+      <p class="section-sub">Cada chatbot lo adaptamos al tono, productos y preguntas frecuentes de tu negocio.</p>
+    </div>
+    <div class="ejemplos-slider">
+      <div class="ejemplos-track" id="ejemplos-track">
+        <div class="ejemplo-slide">
+          <div class="ejemplo-img-wrap">
+            <img src="img/demo-chatbot-web-1.png" alt="Chatbot en tienda online capturando leads" class="ejemplo-img" loading="lazy" onerror="this.style.display='none'">
+            <div class="ejemplo-overlay"></div>
+          </div>
+          <div>
+            <p class="ejemplo-tag">Tienda online</p>
+            <p class="ejemplo-title">Captura leads mientras duermes</p>
+            <p class="ejemplo-desc">El chatbot saluda al visitante, responde dudas sobre productos, captura el correo o número y lo agrega automáticamente a tu lista de contactos.</p>
+            <div class="ejemplo-tags"><span class="etag">Captura de leads</span><span class="etag">24/7</span><span class="etag">Respuestas automáticas</span></div>
+          </div>
+        </div>
+        <div class="ejemplo-slide">
+          <div class="ejemplo-img-wrap">
+            <img src="img/demo-chatbot-web-2.png" alt="Chatbot de atención para clínica" class="ejemplo-img" loading="lazy" onerror="this.style.display='none'">
+            <div class="ejemplo-overlay"></div>
+          </div>
+          <div>
+            <p class="ejemplo-tag">Clínica / Servicios</p>
+            <p class="ejemplo-title">Preguntas frecuentes resueltas al instante</p>
+            <p class="ejemplo-desc">Horarios, precios, ubicación, disponibilidad — todo respondido en segundos sin que nadie esté pendiente de la web.</p>
+            <div class="ejemplo-tags"><span class="etag">FAQ automático</span><span class="etag">Sin personal</span><span class="etag">Personalizable</span></div>
+          </div>
+        </div>
+      </div>
+      <button class="ej-slider-btn ej-prev" id="ej-prev" aria-label="Anterior"><i class="ti ti-chevron-left"></i></button>
+      <button class="ej-slider-btn ej-next" id="ej-next" aria-label="Siguiente"><i class="ti ti-chevron-right"></i></button>
+      <div class="ej-dots"><button class="ej-dot active" aria-label="Ejemplo 1"></button><button class="ej-dot" aria-label="Ejemplo 2"></button></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content sda-scale">
+      <p class="section-tag" style="color:var(--naranja);text-align:center;">¿Lo quieres en tu web?</p>
+      <h2 class="cta-title">Tu chatbot puede estar activo<br>en menos de una semana</h2>
+      <p class="cta-sub">Cuéntanos tu negocio y te mostramos cómo quedaría antes de comprometerte.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/593998805689?text=Hola%2C%20me%20interesa%20un%20chatbot%20para%20mi%20p%C3%A1gina%20web" class="btn-whatsapp"><i class="ti ti-brand-whatsapp" style="font-size:18px;"></i> Cotizar por WhatsApp</a>
+        <a href="mailto:admin@ncsolutionsec.com" class="btn-outline" style="padding:.75rem 1.5rem;"><i class="ti ti-mail"></i> Enviar correo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="NC_Solutions_web.html" class="footer-logo">
+    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="13" fill="#2D1254"/><line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><circle cx="36" cy="15" r="5" fill="#F97316"/><circle cx="52" cy="58" r="4" fill="#F97316"/><circle cx="16" cy="50" r="5" fill="#7C3AED"/></svg>
+    <span class="footer-logo-text"><span>NC</span> Solutions</span>
+  </a>
+  <p class="footer-copy">© 2026 NC Solutions · Tecnología que trabaja para ti</p>
+</footer>
+<a href="https://wa.me/593998805689?text=Hola%2C%20me%20interesa%20un%20chatbot%20web" class="wa-float" title="Chatea con nosotros"><i class="ti ti-brand-whatsapp"></i></a>
+<script>
+if (!CSS.supports('animation-timeline', 'view()')) {
+  const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.sda-up,.sda-left,.sda-right,.sda-scale').forEach(el => io.observe(el));
+}
+
+/* ── Slider de ejemplos ── */
+(function(){
+  var track=document.getElementById('ejemplos-track');
+  if(!track)return;
+  var dots=document.querySelectorAll('.ej-dot');
+  var total=document.querySelectorAll('.ejemplo-slide').length;
+  var current=0,autoTimer;
+  function goTo(idx){current=(idx+total)%total;track.style.transform='translateX(-'+current*100+'%)';dots.forEach(function(d,i){d.classList.toggle('active',i===current);});}
+  document.getElementById('ej-prev').addEventListener('click',function(){goTo(current-1);reset();});
+  document.getElementById('ej-next').addEventListener('click',function(){goTo(current+1);reset();});
+  dots.forEach(function(d,i){d.addEventListener('click',function(){goTo(i);reset();});});
+  var tx=0;
+  track.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+  track.addEventListener('touchend',function(e){var d=tx-e.changedTouches[0].clientX;if(Math.abs(d)>40){goTo(d>0?current+1:current-1);reset();}});
+  function start(){autoTimer=setInterval(function(){goTo(current+1);},4500);}
+  function reset(){clearInterval(autoTimer);start();}
+  start();
+})();
+</script>
+</body>
+</html>
