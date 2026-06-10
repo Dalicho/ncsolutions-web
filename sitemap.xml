@@ -59,6 +59,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Sobre nosotros -->
+  <url>
+    <loc>https://ncsolutionsec.com/sobre-nosotros.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://ncsolutionsec.com/blog/</loc>

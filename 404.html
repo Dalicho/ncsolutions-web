@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada | NC Solutions</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5WBRX7ZQ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K5WBRX7ZQ1');
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--nocturno:#1E0A3C;--nocturno-2:#2D1254;--violeta:#7C3AED;--violeta-light:#A78BFA;--naranja:#F97316;--naranja-dark:#EA6A0A;--lavanda:#FAF5FF;--gray-500:#6B7280}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--nocturno);color:#FAF5FF;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
+
+    /* NAV */
+    nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;border-bottom:1px solid rgba(124,58,237,.2)}
+    .nav-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+    .nav-logo svg{width:32px;height:32px}
+    .nav-logo-text{font-size:16px;font-weight:700;color:#FAF5FF}
+    .nav-logo-text span{color:var(--violeta)}
+
+    /* MAIN */
+    main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 2rem;position:relative;overflow:hidden}
+    main::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(124,58,237,.15) 0%,transparent 65%);pointer-events:none}
+
+    .error-content{position:relative;z-index:1;text-align:center;max-width:560px}
+
+    .error-code{font-size:clamp(6rem,18vw,11rem);font-weight:900;line-height:1;letter-spacing:-.05em;background:linear-gradient(135deg,var(--violeta-light),var(--naranja));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.5rem}
+
+    .error-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#FAF5FF;margin-bottom:1rem;letter-spacing:-.02em}
+
+    .error-desc{font-size:1rem;color:rgba(250,245,255,.6);line-height:1.75;margin-bottom:2.5rem}
+
+    /* LINKS GRID */
+    .quick-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.875rem;margin-bottom:2.5rem;text-align:left}
+    a.quick-link{background:rgba(255,255,255,.04);border:1px solid rgba(124,58,237,.22);border-radius:12px;padding:1rem 1.25rem;text-decoration:none;color:#FAF5FF;display:flex;align-items:center;gap:.75rem;transition:background .2s,border-color .2s,transform .2s}
+    a.quick-link:hover{background:rgba(124,58,237,.15);border-color:rgba(124,58,237,.5);transform:translateY(-2px)}
+    .quick-link i{font-size:20px;color:var(--naranja);flex-shrink:0}
+    .quick-link-text{font-size:14px;font-weight:600}
+    .quick-link-sub{font-size:12px;color:rgba(250,245,255,.45);margin-top:.15rem}
+
+    /* BTNS */
+    .error-btns{display:flex;gap:.875rem;justify-content:center;flex-wrap:wrap}
+    .btn-home{background:var(--naranja);color:#fff;border:none;border-radius:8px;padding:.75rem 1.6rem;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:background .2s,transform .15s}
+    .btn-home:hover{background:var(--naranja-dark);transform:translateY(-1px)}
+    .btn-wa{background:#25D366;color:#fff;border:none;border-radius:8px;padding:.75rem 1.6rem;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:background .2s,transform .15s}
+    .btn-wa:hover{background:#1ebe5d;transform:translateY(-1px)}
+
+    /* FOOTER */
+    footer{padding:1.5rem 2.5rem;border-top:1px solid rgba(124,58,237,.15);text-align:center}
+    .footer-copy{font-size:12.5px;color:rgba(250,245,255,.25)}
+
+    /* WA FLOTANTE */
+    .wa-float{position:fixed;bottom:1.5rem;right:1.5rem;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.4);z-index:200;transition:transform .2s}
+    .wa-float:hover{transform:scale(1.08)}
+
+    @media(max-width:640px){nav{padding:.875rem 1.25rem}.quick-links{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <rect width="72" height="72" rx="13" fill="#2D1254"/>
+      <line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="36" y1="15" x2="22" y2="22" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="58" y1="32" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <circle cx="36" cy="15" r="5" fill="#F97316"/>
+      <circle cx="58" cy="32" r="4" fill="#7C3AED"/>
+      <circle cx="52" cy="58" r="4" fill="#F97316"/>
+      <circle cx="16" cy="50" r="5" fill="#7C3AED"/>
+      <circle cx="22" cy="22" r="3" fill="#F97316" opacity="0.75"/>
+    </svg>
+    <span class="nav-logo-text"><span>NC</span> Solutions</span>
+  </a>
+</nav>
+
+<main>
+  <div class="error-content">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Esta página no existe</h1>
+    <p class="error-desc">El link que seguiste está roto o la página fue movida.<br>Pero el resto del sitio está funcionando perfectamente.</p>
+
+    <div class="quick-links">
+      <a href="/" class="quick-link">
+        <i class="ti ti-home"></i>
+        <div>
+          <p class="quick-link-text">Inicio</p>
+          <p class="quick-link-sub">Página principal</p>
+        </div>
+      </a>
+      <a href="NC_Solutions_web.html#servicios" class="quick-link">
+        <i class="ti ti-tool"></i>
+        <div>
+          <p class="quick-link-text">Servicios</p>
+          <p class="quick-link-sub">Web, chatbots, automatización</p>
+        </div>
+      </a>
+      <a href="blog/index.html" class="quick-link">
+        <i class="ti ti-article"></i>
+        <div>
+          <p class="quick-link-text">Blog</p>
+          <p class="quick-link-sub">Guías y artículos</p>
+        </div>
+      </a>
+      <a href="sobre-nosotros.html" class="quick-link">
+        <i class="ti ti-users"></i>
+        <div>
+          <p class="quick-link-text">Nosotros</p>
+          <p class="quick-link-sub">Quiénes somos</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="error-btns">
+      <a href="/" class="btn-home"><i class="ti ti-arrow-left"></i> Ir al inicio</a>
+      <a href="https://wa.me/593998805689?text=Hola%2C%20tuve%20un%20problema%20en%20el%20sitio%20web" class="btn-wa">
+        <i class="ti ti-brand-whatsapp"></i> Reportar error
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p class="footer-copy">© 2026 NC Solutions · ncsolutionsec.com</p>
+</footer>
+
+<a href="https://wa.me/593998805689?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" class="wa-float">
+  <i class="ti ti-brand-whatsapp"></i>
+</a>
+
+</body>
+</html>
