@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "STREETZ",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3000", "C:\\Users\\USUARIO\\Desktop\\tienda-streetz"],
+      "port": 3000
+    },
+    {
+      "name": "NC-Solutions",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3001", "C:\\Users\\USUARIO\\Desktop\\servicios"],
+      "port": 3001
+    }
+  ]
+}

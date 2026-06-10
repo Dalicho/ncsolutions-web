@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\USUARIO\\\\Desktop\\\\servicios\\\\img\")",
+      "Bash(dir \"C:\\\\Users\\\\USUARIO\\\\Desktop\\\\servicios\\\\img\" /b)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cat -n \"/mnt/c/Users/USUARIO/Desktop/tienda-streetz/index.html\" | head -5)",
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\USUARIO\\\\Desktop\\\\tienda-streetz\\\\images\\\\tee-fucknormal.jpg\" \"tee-fucknormal-back.jpg\")",
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\USUARIO\\\\Desktop\\\\tienda-streetz\\\\images\\\\tee-global.jpg\"     \"tee-global-back.jpg\")",
+      "PowerShell(Rename-Item \"C:\\\\Users\\\\USUARIO\\\\Desktop\\\\tienda-streetz\\\\images\\\\tee-tennis.jpg\"     \"tee-tennis-back.jpg\")"
+    ]
+  }
+}
