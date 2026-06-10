@@ -7,20 +7,18 @@
   <meta name="description" content="Artículos sobre automatización, chatbots, desarrollo web y marketing digital para negocios en Ecuador. Consejos prácticos de NC Solutions.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ncsolutionsec.com/blog/">
-  <!-- ── OPEN GRAPH ── -->
-  <meta property="og:type"         content="website">
-  <meta property="og:url"          content="https://ncsolutionsec.com/blog/">
-  <meta property="og:title"        content="Blog — Tecnología y Negocios para Ecuador | NC Solutions">
-  <meta property="og:description"  content="Artículos sobre automatización, chatbots, desarrollo web y marketing digital para negocios en Ecuador.">
-  <meta property="og:image"        content="https://ncsolutionsec.com/og-image.png">
-  <meta property="og:locale"       content="es_EC">
-  <meta property="og:site_name"    content="NC Solutions">
-  <!-- ── TWITTER CARD ── -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:site"        content="@ncsolutionsec">
-  <meta name="twitter:title"       content="Blog — Tecnología y Negocios para Ecuador | NC Solutions">
-  <meta name="twitter:description" content="Artículos sobre automatización, chatbots, desarrollo web y marketing digital para negocios en Ecuador.">
-  <meta name="twitter:image"       content="https://ncsolutionsec.com/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ncsolutionsec.com/blog/">
+  <meta property="og:title" content="Blog — Tecnología y Negocios para Ecuador | NC Solutions">
+  <meta property="og:description" content="Artículos sobre automatización, chatbots, desarrollo web y marketing digital para negocios en Ecuador.">
+  <meta property="og:image" content="https://ncsolutionsec.com/og-image.png">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:site_name" content="NC Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ncsolutionsec">
+  <meta name="twitter:title" content="Blog — Tecnología y Negocios para Ecuador | NC Solutions">
+  <meta name="twitter:description" content="Artículos prácticos sobre automatización, chatbots y marketing digital para negocios en Ecuador.">
+  <meta name="twitter:image" content="https://ncsolutionsec.com/og-image.png">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,159 +26,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --nocturno: #1E0A3C; --nocturno-2: #2D1254;
-      --violeta: #7C3AED; --violeta-light: #A78BFA;
-      --naranja: #F97316; --naranja-dark: #EA6A0A;
-      --lavanda: #FAF5FF; --gray-100: #F3F4F6; --gray-500: #6B7280;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: var(--nocturno); background: #fff; overflow-x: hidden; }
-
-    /* NAV */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1rem 2.5rem;
-      background: rgba(30,10,60,0.93); backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(124,58,237,0.2);
-    }
-    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-    .nav-logo svg { width: 32px; height: 32px; }
-    .nav-logo-text { font-size: 16px; font-weight: 700; color: #FAF5FF; }
-    .nav-logo-text span { color: var(--violeta); }
-    .nav-back { display: flex; align-items: center; gap: 0.4rem; color: rgba(250,245,255,0.65); text-decoration: none; font-size: 13.5px; font-weight: 500; transition: color 0.2s; }
-    .nav-back:hover { color: #FAF5FF; }
-    .btn-primary { background: var(--naranja); color: #fff; border: none; border-radius: 8px; padding: 0.6rem 1.2rem; font-size: 14px; font-weight: 600; font-family: 'Inter', sans-serif; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: background 0.2s, transform 0.15s; }
-    .btn-primary:hover { background: var(--naranja-dark); transform: translateY(-1px); }
-
-    /* HERO */
-    .blog-hero {
-      background: var(--nocturno); padding: 9rem 2rem 5rem;
-      text-align: center; position: relative; overflow: hidden;
-    }
-    .blog-hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 50% 60%, rgba(124,58,237,0.2) 0%, transparent 65%);
-    }
-    .blog-hero-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
-    .hero-tag { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; color: var(--naranja); margin-bottom: 0.75rem; }
-    .blog-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #FAF5FF; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1rem; }
-    .blog-hero p { font-size: 1.05rem; color: rgba(250,245,255,0.6); line-height: 1.75; }
-
-    /* CONTENT */
-    .blog-section { padding: 5rem 2rem; background: var(--lavanda); }
-    .container { max-width: 1100px; margin: 0 auto; }
-
-    /* FILTERS */
-    .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-    .filter-btn {
-      padding: 0.4rem 1rem; border-radius: 100px; font-size: 13px; font-weight: 600;
-      border: 1.5px solid rgba(124,58,237,0.25); background: #fff; color: var(--gray-500);
-      cursor: pointer; transition: all 0.2s; font-family: 'Inter', sans-serif;
-    }
-    .filter-btn.active, .filter-btn:hover { background: var(--violeta); color: #fff; border-color: var(--violeta); }
-
-    /* GRID */
-    .posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-
-    /* CARD */
-    a.post-card {
-      background: #fff; border-radius: 16px; overflow: hidden;
-      border: 1.5px solid rgba(124,58,237,0.1);
-      text-decoration: none; color: inherit; display: flex; flex-direction: column;
-      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-    }
-    a.post-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(124,58,237,0.12); border-color: var(--violeta); }
-
-    .post-img {
-      width: 100%; height: 190px; object-fit: cover;
-      background: linear-gradient(135deg, var(--nocturno) 0%, var(--nocturno-2) 100%);
-      display: flex; align-items: center; justify-content: center;
-    }
-    .post-img-placeholder {
-      width: 100%; height: 190px;
-      background: linear-gradient(135deg, #1E0A3C 0%, #2D1254 60%, rgba(124,58,237,0.3) 100%);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 48px; color: rgba(167,139,250,0.4);
-    }
-
-    .post-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
-    .post-meta { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
-    .post-cat {
-      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
-      color: var(--violeta); background: rgba(124,58,237,0.1); padding: 0.2rem 0.65rem; border-radius: 100px;
-    }
-    .post-date { font-size: 12px; color: var(--gray-500); }
-    .post-read { font-size: 12px; color: var(--gray-500); display: flex; align-items: center; gap: 0.3rem; }
-
-    .post-title { font-size: 17px; font-weight: 800; line-height: 1.3; letter-spacing: -0.01em; margin-bottom: 0.6rem; color: var(--nocturno); }
-    .post-desc { font-size: 13.5px; color: var(--gray-500); line-height: 1.65; flex: 1; margin-bottom: 1.25rem; }
-    .post-cta { font-size: 13px; font-weight: 700; color: var(--naranja); display: flex; align-items: center; gap: 0.35rem; transition: gap 0.2s; margin-top: auto; }
-    a.post-card:hover .post-cta { gap: 0.65rem; }
-
-    /* COMING SOON CARD */
-    .post-card-soon {
-      background: #fff; border-radius: 16px; overflow: hidden;
-      border: 1.5px dashed rgba(124,58,237,0.2);
-      display: flex; flex-direction: column; opacity: 0.55;
-    }
-    .post-card-soon .post-body { padding: 1.5rem; }
-    .soon-badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: var(--gray-500); background: var(--gray-100); padding: 0.2rem 0.65rem; border-radius: 100px; display: inline-block; margin-bottom: 0.75rem; }
-
-    /* CTA */
-    .cta-section { background: var(--nocturno); padding: 5rem 2rem; text-align: center; position: relative; overflow: hidden; }
-    .cta-section::before { content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 500px; height: 500px; background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); pointer-events: none; }
-    .cta-inner { position: relative; z-index: 1; max-width: 520px; margin: 0 auto; }
-    .cta-section h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 800; color: #FAF5FF; margin-bottom: 1rem; letter-spacing: -0.02em; }
-    .cta-section p { font-size: 1rem; color: rgba(250,245,255,0.6); line-height: 1.75; margin-bottom: 2rem; }
-    .btn-whatsapp { background: #25D366; color: #fff; border: none; border-radius: 8px; padding: 0.75rem 1.6rem; font-size: 15px; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s, transform 0.15s; }
-    .btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-1px); }
-
-    /* FOOTER */
-    footer { background: #0F0520; padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-    .footer-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
-    .footer-logo svg { width: 26px; height: 26px; }
-    .footer-logo-text { font-size: 14px; font-weight: 700; color: #FAF5FF; }
-    .footer-logo-text span { color: var(--violeta); }
-    .footer-copy { font-size: 12.5px; color: rgba(250,245,255,0.3); }
-
-    /* WA FLOTANTE */
-    .wa-float { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 52px; height: 52px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; color: #fff; text-decoration: none; box-shadow: 0 4px 18px rgba(37,211,102,0.4); z-index: 200; transition: transform 0.2s; }
-    .wa-float:hover { transform: scale(1.08); }
-
-    @media (max-width: 640px) {
-      nav { padding: 0.875rem 1.25rem; }
-      .blog-section { padding: 3.5rem 1.25rem; }
-      footer { flex-direction: column; text-align: center; }
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--nocturno:#1E0A3C;--nocturno-2:#2D1254;--violeta:#7C3AED;--violeta-light:#A78BFA;--naranja:#F97316;--naranja-dark:#EA6A0A;--lavanda:#FAF5FF;--gray-100:#F3F4F6;--gray-500:#6B7280}
+    html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;color:var(--nocturno);background:#fff;overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(30,10,60,0.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(124,58,237,0.2)}
+    .nav-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}.nav-logo svg{width:32px;height:32px}.nav-logo-text{font-size:16px;font-weight:700;color:#FAF5FF}.nav-logo-text span{color:var(--violeta)}.nav-back{display:flex;align-items:center;gap:.4rem;color:rgba(250,245,255,.65);text-decoration:none;font-size:13.5px;font-weight:500;transition:color .2s}.nav-back:hover{color:#FAF5FF}.btn-primary{background:var(--naranja);color:#fff;border:none;border-radius:8px;padding:.6rem 1.2rem;font-size:14px;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:background .2s,transform .15s}.btn-primary:hover{background:var(--naranja-dark);transform:translateY(-1px)}
+    .blog-hero{background:var(--nocturno);padding:9rem 2rem 5rem;text-align:center;position:relative;overflow:hidden}.blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(124,58,237,.2) 0%,transparent 65%)}.blog-hero-content{position:relative;z-index:1;max-width:640px;margin:0 auto}.hero-tag{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;color:var(--naranja);margin-bottom:.75rem}.blog-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:#FAF5FF;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}.blog-hero p{font-size:1.05rem;color:rgba(250,245,255,.6);line-height:1.75}
+    .blog-section{padding:5rem 2rem;background:var(--lavanda)}.container{max-width:1100px;margin:0 auto}
+    .posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+    a.post-card{background:#fff;border-radius:16px;overflow:hidden;border:1.5px solid rgba(124,58,237,.1);text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+    a.post-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(124,58,237,.12);border-color:var(--violeta)}
+    .post-img-placeholder{width:100%;height:190px;display:flex;align-items:center;justify-content:center;font-size:48px}
+    .post-img-placeholder.web{background:linear-gradient(135deg,#1E0A3C,#2D1254);color:rgba(167,139,250,.4)}
+    .post-img-placeholder.wa{background:linear-gradient(135deg,#064e3b,#065f46);color:rgba(52,211,153,.35)}
+    .post-img-placeholder.auto{background:linear-gradient(135deg,#1c1917,#292524);color:rgba(249,115,22,.35)}
+    .post-img-placeholder.seo{background:linear-gradient(135deg,#0c1445,#1e3a8a);color:rgba(96,165,250,.35)}
+    .post-img-placeholder.meta{background:linear-gradient(135deg,#1e1b4b,#312e81);color:rgba(165,180,252,.35)}
+    .post-img-placeholder.ia{background:linear-gradient(135deg,#1a0533,#3b0764);color:rgba(167,139,250,.4)}
+    .post-body{padding:1.5rem;display:flex;flex-direction:column;flex:1}
+    .post-meta{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem;flex-wrap:wrap}
+    .post-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--violeta);background:rgba(124,58,237,.1);padding:.2rem .65rem;border-radius:100px}
+    .post-date{font-size:12px;color:var(--gray-500)}.post-read{font-size:12px;color:var(--gray-500);display:flex;align-items:center;gap:.3rem}
+    .post-title{font-size:17px;font-weight:800;line-height:1.3;letter-spacing:-.01em;margin-bottom:.6rem;color:var(--nocturno)}
+    .post-desc{font-size:13.5px;color:var(--gray-500);line-height:1.65;flex:1;margin-bottom:1.25rem}
+    .post-cta{font-size:13px;font-weight:700;color:var(--naranja);display:flex;align-items:center;gap:.35rem;transition:gap .2s;margin-top:auto}
+    a.post-card:hover .post-cta{gap:.65rem}
+    .cta-section{background:var(--nocturno);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}.cta-section::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(124,58,237,.15) 0%,transparent 70%);pointer-events:none}.cta-inner{position:relative;z-index:1;max-width:520px;margin:0 auto}.cta-section h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:#FAF5FF;margin-bottom:1rem;letter-spacing:-.02em}.cta-section p{font-size:1rem;color:rgba(250,245,255,.6);line-height:1.75;margin-bottom:2rem}.btn-whatsapp{background:#25D366;color:#fff;border:none;border-radius:8px;padding:.75rem 1.6rem;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:background .2s,transform .15s}.btn-whatsapp:hover{background:#1ebe5d;transform:translateY(-1px)}
+    footer{background:#0F0520;padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}.footer-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}.footer-logo svg{width:26px;height:26px}.footer-logo-text{font-size:14px;font-weight:700;color:#FAF5FF}.footer-logo-text span{color:var(--violeta)}.footer-copy{font-size:12.5px;color:rgba(250,245,255,.3)}.wa-float{position:fixed;bottom:1.5rem;right:1.5rem;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;text-decoration:none;box-shadow:0 4px 18px rgba(37,211,102,.4);z-index:200;transition:transform .2s}.wa-float:hover{transform:scale(1.08)}
+    @media(max-width:640px){nav{padding:.875rem 1.25rem}.blog-section{padding:3.5rem 1.25rem}footer{flex-direction:column;text-align:center}}
   </style>
 </head>
 <body>
-
 <nav>
   <a href="../NC_Solutions_web.html" class="nav-logo">
-    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-      <rect width="72" height="72" rx="13" fill="#2D1254"/>
-      <line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="36" y1="15" x2="22" y2="22" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="58" y1="32" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <circle cx="36" cy="15" r="5" fill="#F97316"/>
-      <circle cx="58" cy="32" r="4" fill="#7C3AED"/>
-      <circle cx="52" cy="58" r="4" fill="#F97316"/>
-      <circle cx="16" cy="50" r="5" fill="#7C3AED"/>
-      <circle cx="22" cy="22" r="3" fill="#F97316" opacity="0.75"/>
-    </svg>
+    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="13" fill="#2D1254"/><line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="22" y2="22" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="58" y1="32" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><circle cx="36" cy="15" r="5" fill="#F97316"/><circle cx="58" cy="32" r="4" fill="#7C3AED"/><circle cx="52" cy="58" r="4" fill="#F97316"/><circle cx="16" cy="50" r="5" fill="#7C3AED"/><circle cx="22" cy="22" r="3" fill="#F97316" opacity="0.75"/></svg>
     <span class="nav-logo-text"><span>NC</span> Solutions</span>
   </a>
   <a href="../NC_Solutions_web.html" class="nav-back"><i class="ti ti-arrow-left"></i> Inicio</a>
   <a href="../NC_Solutions_web.html#contacto" class="btn-primary"><i class="ti ti-file-invoice"></i> Cotiza gratis</a>
 </nav>
 
-<!-- HERO -->
 <section class="blog-hero">
   <div class="blog-hero-content">
     <p class="hero-tag">Blog NC Solutions</p>
@@ -189,90 +74,90 @@
   </div>
 </section>
 
-<!-- ARTÍCULOS -->
 <section class="blog-section">
   <div class="container">
-
-    <div class="filters">
-      <button class="filter-btn active">Todos</button>
-      <button class="filter-btn">Desarrollo web</button>
-      <button class="filter-btn">Chatbots</button>
-      <button class="filter-btn">Automatización</button>
-      <button class="filter-btn">SEO</button>
-    </div>
-
     <div class="posts-grid">
 
-      <!-- Artículo 1 — publicado -->
       <a class="post-card" href="cuanto-cuesta-pagina-web-ecuador.html">
-        <div class="post-img-placeholder"><i class="ti ti-world"></i></div>
+        <div class="post-img-placeholder web"><i class="ti ti-world"></i></div>
         <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Desarrollo web</span>
-            <span class="post-date">9 jun 2026</span>
-            <span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 6 min</span>
-          </div>
+          <div class="post-meta"><span class="post-cat">Desarrollo web</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 6 min</span></div>
           <p class="post-title">¿Cuánto cuesta una página web en Ecuador en 2026?</p>
-          <p class="post-desc">Precios reales, qué incluye cada rango y por qué lo más barato puede costarte más en el largo plazo. Guía completa para negocios ecuatorianos.</p>
+          <p class="post-desc">Precios reales por tipo de web, qué debe incluir y por qué lo más barato puede costarte mucho más en el largo plazo.</p>
           <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
         </div>
       </a>
 
-      <!-- Próximamente 2 -->
-      <div class="post-card-soon">
-        <div class="post-img-placeholder" style="height:190px;background:linear-gradient(135deg,#1a3a1a,#1e4d1e);opacity:0.5;"></div>
+      <a class="post-card" href="chatbot-whatsapp-business-que-es.html">
+        <div class="post-img-placeholder wa"><i class="ti ti-brand-whatsapp"></i></div>
         <div class="post-body">
-          <span class="soon-badge">Próximamente</span>
-          <p class="post-title" style="color:var(--gray-500);">¿Qué es un chatbot de WhatsApp y cómo ayuda a tu negocio?</p>
-          <p class="post-desc">Todo lo que necesitas saber antes de automatizar tu WhatsApp Business.</p>
+          <div class="post-meta"><span class="post-cat">Chatbots</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 5 min</span></div>
+          <p class="post-title">¿Qué es un chatbot para WhatsApp Business y para qué sirve?</p>
+          <p class="post-desc">Cómo funciona, para qué negocios tiene sentido y cuánto cuesta implementarlo en Ecuador.</p>
+          <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
         </div>
-      </div>
+      </a>
 
-      <!-- Próximamente 3 -->
-      <div class="post-card-soon">
-        <div class="post-img-placeholder" style="height:190px;background:linear-gradient(135deg,#1a1a3a,#1e1e4d);opacity:0.5;"></div>
+      <a class="post-card" href="como-automatizar-negocio-make-n8n.html">
+        <div class="post-img-placeholder auto"><i class="ti ti-bolt"></i></div>
         <div class="post-body">
-          <span class="soon-badge">Próximamente</span>
-          <p class="post-title" style="color:var(--gray-500);">Cómo automatizar tu negocio con Make o n8n — guía para principiantes</p>
-          <p class="post-desc">Ejemplos reales de automatizaciones que puedes implementar esta semana.</p>
+          <div class="post-meta"><span class="post-cat">Automatización</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 7 min</span></div>
+          <p class="post-title">Cómo automatizar tu negocio en Ecuador con Make, n8n o Zapier</p>
+          <p class="post-desc">Comparativa de herramientas, 5 automatizaciones con alto impacto y guía práctica para empezar esta semana.</p>
+          <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
         </div>
-      </div>
+      </a>
+
+      <a class="post-card" href="seo-ecuador-como-aparecer-google.html">
+        <div class="post-img-placeholder seo"><i class="ti ti-search"></i></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">SEO</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 6 min</span></div>
+          <p class="post-title">SEO en Ecuador: cómo aparecer en Google sin pagar publicidad</p>
+          <p class="post-desc">Los factores clave del posicionamiento local, errores comunes y 5 acciones que puedes hacer esta semana.</p>
+          <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="anuncios-facebook-no-funcionan.html">
+        <div class="post-img-placeholder meta"><i class="ti ti-flame"></i></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">Meta Ads</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 5 min</span></div>
+          <p class="post-title">¿Por qué tus anuncios de Facebook e Instagram no funcionan?</p>
+          <p class="post-desc">Los 6 errores más comunes en Meta Ads que hacen que tu presupuesto se gaste sin resultados — y cómo corregirlos.</p>
+          <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a class="post-card" href="herramientas-ia-negocios-ecuador.html">
+        <div class="post-img-placeholder ia"><i class="ti ti-sparkles"></i></div>
+        <div class="post-body">
+          <div class="post-meta"><span class="post-cat">IA &amp; Tecnología</span><span class="post-date">9 jun 2026</span><span class="post-read"><i class="ti ti-clock" style="font-size:13px;"></i> 5 min</span></div>
+          <p class="post-title">Las mejores herramientas de IA para negocios en Ecuador en 2026</p>
+          <p class="post-desc">ChatGPT, Canva AI, chatbots y automatización. Guía práctica para emprendedores y pymes ecuatorianas.</p>
+          <span class="post-cta">Leer artículo <i class="ti ti-arrow-right"></i></span>
+        </div>
+      </a>
 
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
-    <p style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;color:var(--naranja);margin-bottom:0.75rem;">¿Listo para empezar?</p>
+    <p style="font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;color:var(--naranja);margin-bottom:.75rem;">¿Listo para empezar?</p>
     <h2>¿Tienes preguntas sobre<br>tu negocio digital?</h2>
     <p>Te respondemos sin costo ni compromiso. Una conversación es suficiente para saber si podemos ayudarte.</p>
-    <a href="https://wa.me/593998805689?text=Hola%2C%20leí%20el%20blog%20de%20NC%20Solutions%20y%20tengo%20una%20pregunta" class="btn-whatsapp">
-      <i class="ti ti-brand-whatsapp" style="font-size:18px;"></i> Escribir por WhatsApp
-    </a>
+    <a href="https://wa.me/593998805689?text=Hola%2C%20leí%20el%20blog%20de%20NC%20Solutions%20y%20tengo%20una%20pregunta" class="btn-whatsapp"><i class="ti ti-brand-whatsapp" style="font-size:18px;"></i> Escribir por WhatsApp</a>
   </div>
 </section>
 
 <footer>
   <a href="../NC_Solutions_web.html" class="footer-logo">
-    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-      <rect width="72" height="72" rx="13" fill="#2D1254"/>
-      <line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
-      <circle cx="36" cy="15" r="5" fill="#F97316"/>
-      <circle cx="52" cy="58" r="4" fill="#F97316"/>
-      <circle cx="16" cy="50" r="5" fill="#7C3AED"/>
-    </svg>
+    <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="13" fill="#2D1254"/><line x1="36" y1="15" x2="58" y2="32" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="36" y1="15" x2="16" y2="50" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><line x1="16" y1="50" x2="52" y2="58" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/><circle cx="36" cy="15" r="5" fill="#F97316"/><circle cx="52" cy="58" r="4" fill="#F97316"/><circle cx="16" cy="50" r="5" fill="#7C3AED"/></svg>
     <span class="footer-logo-text"><span>NC</span> Solutions</span>
   </a>
   <p class="footer-copy">© 2026 NC Solutions · Tecnología que trabaja para ti</p>
 </footer>
-
-<a href="https://wa.me/593998805689?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" class="wa-float">
-  <i class="ti ti-brand-whatsapp"></i>
-</a>
-
+<a href="https://wa.me/593998805689?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" class="wa-float"><i class="ti ti-brand-whatsapp"></i></a>
 </body>
 </html>
