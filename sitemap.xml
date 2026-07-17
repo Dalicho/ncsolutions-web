@@ -52,20 +52,6 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://ncsolutionsec.com/dashboard-facturas.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ncsolutionsec.com/prospeccion-clientes.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Sobre nosotros -->
   <url>
     <loc>https://ncsolutionsec.com/sobre-nosotros.html</loc>
